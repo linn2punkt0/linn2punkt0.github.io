@@ -1,0 +1,79 @@
+body {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logoContainer {
+  width: 580px;
+  position: relative;
+}
+.logoContainer img {
+  width: 100%;
+}
+
+.linkContainer {
+  width: 50vw;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 20px;
+  margin: 0px 6px 10px 6px;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(124, 0, 58);
+}
+.line {
+  width: 92vw;
+  border-bottom: 0.15em solid black;
+}
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imageAndText {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(226, 210, 217);
+  border-radius: 80px;
+}
+
+.profilePictureContainer {
+  width: 300px;
+  height: 300px;
+  margin: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profilePictureContainer img {
+  border-radius: 80px;
+}
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  margin: 5px;
+}
+h4 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  margin: 5px;
+}
