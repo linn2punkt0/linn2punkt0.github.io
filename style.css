@@ -58,8 +58,6 @@ a:visited {
 }
 
 .profilePictureContainer {
-  width: 300px;
-  height: 300px;
   margin: 20px 10px 10px 10px;
   display: flex;
   justify-content: center;
@@ -67,6 +65,8 @@ a:visited {
 }
 .profilePictureContainer img {
   border-radius: 80px;
+  width: 300px;
+  height: 300px;
 }
 h1 {
   font-family: "Fredericka the Great", cursive;
