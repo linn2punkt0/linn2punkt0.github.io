@@ -1,79 +1,145 @@
-body {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+:root {
+  --main-bg-color: #141414;
+  --main-accent-color: #a15889;
+  --main-font-color: #d0d0d0;
+  --main-nav-color: #000000;
+  --main-accent-font: "Great Vibes";
+  --main-font: "Comfortaa";
+  --main-detail-font: "Raleway Dots";
+  --backup-font: "cursive";
 }
-.logoContainer {
-  width: 580px;
+
+body {
+  background-color: var(--main-bg-color);
+  width: 100vw;
+}
+nav {
+  background-color: var(--main-nav-color);
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu-selector {
+  width: 100vw;
+  height: 0vh;
+  margin: 0;
+  padding-bottom: 10vw;
+  top: 8vh;
+  background-color: black;
+  position: fixed;
+  z-index: 500;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 2vw;
+}
+.main-div {
+  width: 90vw;
+  margin: 10vh auto;
   position: relative;
 }
-.logoContainer img {
+
+.display {
+  height: 92vh;
+  opacity: 1;
+  pointer-events: all;
+}
+.introduction {
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+}
+.introduction > h2 {
+  color: var(--main-accent-color);
+  font-family: var(--main-accent-font);
+  font-size: 7vw;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.introduction > h1 {
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 6vw;
+  margin: 10px 0;
+}
+
+/* Home-page, featured projects */
+.featured-projects {
   width: 100%;
+  max-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-gap: 1vw;
+  font-family: var(--main-font);
+  color: var(--main-accent-color);
+  font-size: 2vw;
+}
+.featured-projects > div {
+  max-width: 30vw;
+  background-color: var(--main-font-color);
+  padding-top: 56.25%;
+}
+.featured-projects > h5 {
+  margin: 1vh 0;
+}
+.featured-projects h4 {
+  margin: 1vh 0;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+div.featured-one {
+  background-image: url("./images/meowmory2.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+h5.featured-one {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+div.featured-two {
+  background-image: url("./images/FS1.png");
+  background-size: cover;
+  background-position: center;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+h5.featured-two {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+div.featured-three {
+  background-image: url("./images/East-London.png");
+  background-size: cover;
+  background-position: center;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+h5.featured-three {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
 }
 
-.linkContainer {
-  width: 50vw;
-  font-family: "Fredericka the Great", cursive;
-  font-size: 20px;
-  margin: 0px 6px 10px 6px;
+footer {
+  background-color: var(--main-nav-color);
+  height: 10vh;
+  margin: 0;
+  margin-top: 6vh;
   display: flex;
-  justify-content: space-around;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-a:visited {
-  color: rgb(124, 0, 58);
-}
-.line {
-  width: 92vw;
-  border-bottom: 0.15em solid black;
-}
-.mainContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-}
-.gifContainer {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-.imageAndText {
-  width: 500px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(226, 210, 217);
-  border-radius: 80px;
-}
-
-.profilePictureContainer {
-  margin: 20px 10px 10px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profilePictureContainer img {
-  border-radius: 80px;
-  width: 300px;
-  height: 300px;
-}
-h1 {
-  font-family: "Fredericka the Great", cursive;
-  margin: 5px;
-}
-h4 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 300;
-  margin: 5px;
+a > img {
+  width: 3vw;
+  margin: 1vw 0.5vw 1vw 0.5vw;
 }
