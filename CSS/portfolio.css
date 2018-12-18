@@ -61,7 +61,7 @@ p {
   align-items: flex-start;
 }
 .image-one {
-  background-image: url("./images/meowmory2.jpg");
+  background-image: url("../images/meowmory2.jpg");
   width: 25vw;
   padding-top: 56.25%;
   background-size: cover;
@@ -76,7 +76,7 @@ p {
   align-items: flex-start;
 }
 .image-two {
-  background-image: url("./images/FS1.png");
+  background-image: url("../images/FS1.png");
   width: 25vw;
   padding-top: 56.25%;
   background-size: cover;
@@ -91,7 +91,7 @@ p {
   align-items: flex-start;
 }
 .image-three {
-  background-image: url("./images/East-London.png");
+  background-image: url("../images/East-London.png");
   width: 25vw;
   padding-top: 56.25%;
   background-size: cover;
