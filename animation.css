@@ -78,3 +78,48 @@
   width: 0%;
   left: 50%;
 }
+
+/* Hover-effect on images */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.822);
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Portfolio images */
+.item-one > a:hover .overlay {
+  opacity: 1;
+}
+.item-two > a:hover .overlay {
+  opacity: 1;
+}
+.item-three > a:hover .overlay {
+  opacity: 1;
+}
+/* Featured images */
+.featured-one-image:hover .overlay {
+  opacity: 1;
+}
+.featured-two-image:hover .overlay {
+  opacity: 1;
+}
+.featured-three-image:hover .overlay {
+  opacity: 1;
+}

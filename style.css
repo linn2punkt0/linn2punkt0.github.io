@@ -94,45 +94,50 @@ nav {
   padding-top: 56.25%;
 }
 .featured-projects > a {
-  margin: 1vh 0;
   text-decoration: none;
   color: var(--main-accent-color);
+}
+.featured-projects h5 {
+  margin: 0.5vh 0;
 }
 .featured-projects h4 {
   margin: 1vh 0;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
-div.featured-one {
+.featured-one-image {
   background-image: url("./images/meowmory2.jpg");
   background-size: cover;
   background-position: center;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  position: relative;
 }
-a.featured-one {
+.featured-one {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
 }
-div.featured-two {
+.featured-two-image {
   background-image: url("./images/FS1.png");
   background-size: cover;
   background-position: center;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
+  position: relative;
 }
-a.featured-two {
+.featured-two {
   grid-row: 3 / 4;
   grid-column: 2 / 3;
 }
-div.featured-three {
+.featured-three-image {
   background-image: url("./images/East-London.png");
   background-size: cover;
   background-position: center;
   grid-row: 2 / 3;
   grid-column: 3 / 4;
+  position: relative;
 }
-a.featured-three {
+.featured-three {
   grid-row: 3 / 4;
   grid-column: 3 / 4;
 }
