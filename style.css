@@ -40,6 +40,11 @@ nav {
   color: var(--main-font-color);
   font-family: var(--main-font);
   font-size: 2vw;
+  text-decoration: none;
+}
+.menu-selector > a {
+  text-decoration: none;
+  color: var(--main-font-color);
 }
 .main-div {
   width: 90vw;
@@ -88,8 +93,10 @@ nav {
   background-color: var(--main-font-color);
   padding-top: 56.25%;
 }
-.featured-projects > h5 {
+.featured-projects > a {
   margin: 1vh 0;
+  text-decoration: none;
+  color: var(--main-accent-color);
 }
 .featured-projects h4 {
   margin: 1vh 0;
@@ -103,7 +110,7 @@ div.featured-one {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
-h5.featured-one {
+a.featured-one {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
 }
@@ -114,7 +121,7 @@ div.featured-two {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
 }
-h5.featured-two {
+a.featured-two {
   grid-row: 3 / 4;
   grid-column: 2 / 3;
 }
@@ -125,7 +132,7 @@ div.featured-three {
   grid-row: 2 / 3;
   grid-column: 3 / 4;
 }
-h5.featured-three {
+a.featured-three {
   grid-row: 3 / 4;
   grid-column: 3 / 4;
 }
