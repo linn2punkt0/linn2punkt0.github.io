@@ -63,7 +63,25 @@ footer {
   margin-top: 6vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact {
+  height: 8vh;
+  width: 30vw;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 1vw;
+}
+.email-link {
+  height: 100%;
+  width: 100%;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 1vw;
+}
+.social-media {
+  width: 30vw;
 }
 a > img {
   width: 3vw;
