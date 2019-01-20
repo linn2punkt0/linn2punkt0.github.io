@@ -10,7 +10,7 @@
 .introduction > h2 {
   color: var(--main-accent-color);
   font-family: var(--main-accent-font);
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 400;
   margin: 10px 0;
 }
@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 800px) {
   .main-div {
-    width: 96vw;
+    width: 90vw;
     margin: 10vh auto;
     position: relative;
   }
