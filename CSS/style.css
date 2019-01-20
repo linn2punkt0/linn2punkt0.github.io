@@ -83,13 +83,13 @@ footer {
   color: var(--main-font-color);
   font-family: var(--main-font);
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
 }
 .email-me > p {
   margin: 0 0 1vh 0;
 }
 .contact {
-  font-size: 25px;
+  font-size: 22px;
 }
 .mail{
   color: var(--main-accent-color);
@@ -118,7 +118,7 @@ a > img {
   color: var(--main-font-color);
   text-decoration: none;
   font-family: var(--main-font);
-  font-size: 20px;
+  font-size: 17px;
   line-height: 3vh;
 }
 
