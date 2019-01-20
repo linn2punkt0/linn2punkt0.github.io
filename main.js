@@ -23,18 +23,19 @@ function closeMenu() {
 menuLinks.forEach(link => {
   link.addEventListener("click", () => closeMenu());
 });
+
 // Navbar visible when scrolling up
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  if (menuIsOpen) {
-    document.querySelector(".navbar").style.top = "0";
-  } else {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.querySelector(".navbar").style.top = "0";
-    } else {
-      document.querySelector(".navbar").style.top = "-56px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-};
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//  if (menuIsOpen) {
+//    document.querySelector(".navbar").style.top = "0";
+//  } else {
+//    var currentScrollPos = window.pageYOffset;
+//    if (prevScrollpos > currentScrollPos) {
+//      document.querySelector(".navbar").style.top = "0";
+//   } else {
+//      document.querySelector(".navbar").style.top = "-56px";
+//    }
+//    prevScrollpos = currentScrollPos;
+//  }
+// };

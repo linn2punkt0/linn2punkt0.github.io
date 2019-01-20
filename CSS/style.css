@@ -8,15 +8,13 @@
   --main-detail-font: "Raleway Dots";
   --backup-font: "cursive";
 }
-
 body {
+  top:0;
   background-color: var(--main-bg-color);
   width: 100vw;
 }
-
 /* Navbar, header and menu */
 nav {
-  position: fixed;
   width: 100vw;
   height: 56px;
   display: flex;
@@ -27,15 +25,18 @@ nav {
   background-color: black;
   transition: 0.8s;
 }
+#nav-icon3 {
+  z-index: 1000;
+  margin-right: 20px;
+}
 .menu-selector {
   width: 100vw;
-  height: 0vh;
+  height: 100vh;
+  top: -100vh;
   margin: 0;
-  padding-bottom: 10vw;
-  top: 56px;
   background-color: black;
   position: fixed;
-  z-index: 500;
+  z-index: 2;
   pointer-events: none;
   transition: 0.5s;
   opacity: 0;
@@ -45,7 +46,7 @@ nav {
   align-items: center;
   color: var(--main-font-color);
   font-family: var(--main-font);
-  font-size: 2vw;
+  font-size: 30px;
   text-decoration: none;
 }
 .menu-selector > a {
@@ -54,9 +55,10 @@ nav {
 }
 
 .display {
-  height: calc(100vh - 56px);
+  height: 100vh;
   opacity: 1;
   pointer-events: all;
+  transform: translateY(100vh);
 }
 
 
@@ -81,7 +83,7 @@ footer {
   margin: 1vh;
   color: var(--main-font-color);
   font-family: var(--main-font);
-  font-size: 2vh;
+  font-size: 15px;
 }
 .email-me > p {
   margin: 0 0 1vh 0;
@@ -109,6 +111,13 @@ a > img {
   color: var(--main-font-color);
   text-decoration: none;
   font-family: var(--main-font);
-  font-size: 2vh;
+  font-size: 15px;
   line-height: 3vh;
+}
+
+@media only screen and (max-width: 800px) {
+  #nav-icon3 {
+    z-index: 1000;
+    margin-right: 0
+  }
 }

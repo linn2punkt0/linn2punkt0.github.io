@@ -81,3 +81,62 @@ p {
   align-items: center;
   list-style: none;
 }
+@media only screen and (max-width: 800px) {
+  .main-grid {
+    width: 100%;
+    /* grid-template-rows: 6fr 5fr 10fr 1fr;*/
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+  }
+  h1, h2, h3, h4, p, img, ul, li {
+    padding-left: 10px;
+    width: 95vw;
+  }
+  .contact {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    overflow: auto;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .profile-cv {
+    width: 150px;
+    margin-top: 10px;
+  }
+  img {
+    width: 30px;
+    margin: 0.5vw;
+  }
+  .education {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .work-experience {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .other-skills {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-bottom: 20px;
+  }
+  .other-skills > ul {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+  
+  }
+}
