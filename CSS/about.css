@@ -35,7 +35,7 @@ p {
   line-height: 150%;
 }
 img {
-  width: 6vw;
+  width: 70px;
 }
 @media only screen and (max-width: 800px) {
   .about-me-section {
@@ -53,5 +53,7 @@ img {
   p {
     font-size: 17px;
   }
-
+  img {
+    width: 50px;
+  }
 }

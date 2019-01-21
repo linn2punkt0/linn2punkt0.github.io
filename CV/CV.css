@@ -36,7 +36,7 @@
   border-radius: 50%;
 }
 img {
-  width: 4vw;
+  width: 70px;
   margin: 0.5vw;
 }
 .contact > h3 {
@@ -88,7 +88,14 @@ p {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
   }
-  h1, h2, h3, h4, p, img, ul, li {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  img,
+  ul,
+  li {
     padding-left: 10px;
     width: 95vw;
   }
@@ -108,7 +115,7 @@ p {
     margin-top: 10px;
   }
   img {
-    width: 30px;
+    width: 50px;
     margin: 0.5vw;
   }
   .education {
@@ -137,6 +144,5 @@ p {
     justify-content: space-around;
     align-items: flex-start;
     list-style: none;
-  
   }
 }
