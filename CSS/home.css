@@ -41,7 +41,7 @@
 }
 .featured-projects > a {
   text-decoration: none;
-  color: var(--main-accent-color);
+  color: var(--main-font-color);
 }
 .featured-projects h5 {
   margin: 0.5vh 0;

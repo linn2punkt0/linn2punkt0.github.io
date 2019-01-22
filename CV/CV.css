@@ -34,8 +34,8 @@
   width: 18vw;
   border-radius: 50%;
 }
-img {
-  width: 70px;
+svg {
+  fill: var(--main-font-color);
   margin: 0.5vw;
 }
 .contact-bar > h3 {
