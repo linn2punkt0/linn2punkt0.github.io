@@ -7,6 +7,17 @@
   --main-font: "Comfortaa";
   --main-detail-font: "Raleway Dots";
   --backup-font: "cursive";
+
+  --animation-color-one: #a15889;
+  --animation-color-two: #8e44ad;
+  --animation-color-three: #7c5caf;
+  --animation-color-four: #4171b1;
+  --animation-color-five: #2980b9;
+  --animation-color-six: #7b43aa;
+  --animation-color-seven: #912f80;
+  --animation-color-eight: #8b3959;
+  --animation-color-nine: #c78cb3;
+  --animation-color-ten: #c26bac;
 }
 /* Burgermenu and animation */
 #nav-icon3 {
@@ -132,4 +143,115 @@
 }
 .featured-three-image:hover .overlay {
   opacity: 1;
+}
+
+/* Color-shift animations */
+.color-shift {
+  color: var(--main-accent-color);
+  animation: colorchange 60s infinite alternate;
+}
+.color-shift-background {
+  background-color: var(--main-accent-color);
+  animation: colorchangebackground 60s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: var(--animation-color-one);
+    fill: var(--animation-color-one);
+  }
+
+  10% {
+    color: var(--animation-color-two);
+    fill: var(--animation-color-two);
+  }
+
+  20% {
+    color: var(--animation-color-three);
+    fill: var(--animation-color-three);
+  }
+
+  30% {
+    color: var(--animation-color-four);
+    fill: var(--animation-color-four);
+  }
+
+  40% {
+    color: var(--animation-color-five);
+    fill: var(--animation-color-five);
+  }
+
+  50% {
+    color: var(--animation-color-six);
+    fill: var(--animation-color-six);
+  }
+
+  60% {
+    color: var(--animation-color-seven);
+    fill: var(--animation-color-seven);
+  }
+
+  70% {
+    color: var(--animation-color-eight);
+    fill: var(--animation-color-eight);
+  }
+  80% {
+    color: var(--animation-color-nine);
+    fill: var(--animation-color-nine);
+  }
+
+  90% {
+    color: var(--animation-color-ten);
+    fill: var(--animation-color-ten);
+  }
+
+  100% {
+    color: var(--animation-color-one);
+    fill: var(--animation-color-one);
+  }
+}
+
+@-webkit-keyframes colorchangebackground {
+  0% {
+    background-color: var(--animation-color-one);
+  }
+
+  10% {
+    background-color: var(--animation-color-two);
+  }
+
+  20% {
+    background-color: var(--animation-color-three);
+  }
+
+  30% {
+    background-color: var(--animation-color-four);
+  }
+
+  40% {
+    background-color: var(--animation-color-five);
+  }
+
+  50% {
+    background-color: var(--animation-color-six);
+  }
+
+  60% {
+    background-color: var(--animation-color-seven);
+  }
+
+  70% {
+    background-color: var(--animation-color-eight);
+  }
+  80% {
+    background-color: var(--animation-color-nine);
+  }
+
+  90% {
+    background-color: var(--animation-color-ten);
+  }
+
+  100% {
+    background-color: var(--animation-color-one);
+  }
 }
