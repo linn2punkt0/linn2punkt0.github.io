@@ -20,6 +20,7 @@ h1 {
   color: var(--main-font-color);
   font-family: var(--main-font);
   font-size: 70px;
+  font-weight: 700;
   margin: 3vw 0 3vw 5vw;
   align-self: flex-start;
 }
@@ -45,6 +46,7 @@ h1 {
 p {
   color: var(--main-font-color);
   font-size: 20px;
+  font-weight: 300;
   margin: 0;
 }
 .completion-date {
@@ -54,13 +56,14 @@ p {
 .item-one {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+  width: 26vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .image-one {
-  background-image: url("../images/meowmory2.jpg");
+  background-image: url("../images/Photoify.jpg");
   width: 25vw;
   padding-top: 56.25%;
   background-size: cover;
@@ -69,13 +72,14 @@ p {
 .item-two {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  width: 26vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .image-two {
-  background-image: url("../images/FS1.png");
+  background-image: url("../images/meowmory.jpg");
   width: 25vw;
   padding-top: 56.25%;
   background-size: cover;
@@ -84,13 +88,14 @@ p {
 .item-three {
   grid-row: 1 / 2;
   grid-column: 3 / 4;
+  width: 26vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .image-three {
-  background-image: url("../images/East-London.png");
+  background-image: url("../images/FS1.jpg");
   width: 25vw;
   padding-top: 56.25%;
   background-size: cover;
@@ -114,6 +119,7 @@ p {
   }
   .portfolio-items > div > h5 {
     font-size: 22px;
+    margin-top: 10px;
   }
   p {
     font-size: 17px;
@@ -121,6 +127,7 @@ p {
   .item-one {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    width: 90vw;
   }
   .image-one {
     width: 90vw;
@@ -128,6 +135,7 @@ p {
   .item-two {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    width: 90vw;
   }
   .image-two {
     width: 90vw;
@@ -135,6 +143,7 @@ p {
   .item-three {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+    width: 90vw;
   }
   .image-three {
     width: 90vw;

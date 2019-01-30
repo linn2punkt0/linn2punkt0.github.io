@@ -9,13 +9,15 @@
   --backup-font: "cursive";
 }
 .about-me-section {
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 300;
 }
 .profile-image {
   width: 30vw;

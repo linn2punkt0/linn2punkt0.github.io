@@ -9,15 +9,22 @@
   --backup-font: "cursive";
 
   --animation-color-one: #a15889;
-  --animation-color-two: #8e44ad;
-  --animation-color-three: #7c5caf;
-  --animation-color-four: #4171b1;
-  --animation-color-five: #2980b9;
-  --animation-color-six: #7b43aa;
-  --animation-color-seven: #912f80;
-  --animation-color-eight: #8b3959;
-  --animation-color-nine: #c78cb3;
-  --animation-color-ten: #c26bac;
+  --animation-color-two: #c07ebd;
+  --animation-color-three: #4171b1;
+  --animation-color-four: #94accc;
+  --animation-color-five: #a15889;
+  --animation-color-six: #c07ebd;
+  --animation-color-seven: #247ebb;
+  --animation-color-eight: #7aa3bb;
+  --animation-color-nine: #8e3463;
+  --animation-color-ten: #aa6b9a;
+
+  --my-gradient-one: linear-gradient(
+    to right,
+    var(--main-accent-color) 0%,
+    #db9acd 100%;
+  );
+  --my-gradient-two: linear-gradient(to right, #247ebb 0%, #7aa3bb;);
 }
 /* Burgermenu and animation */
 #nav-icon3 {
@@ -33,7 +40,7 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  background-color: var(--main-accent-color);
+  background: none;
   border: none;
 }
 
@@ -148,11 +155,11 @@
 /* Color-shift animations */
 .color-shift {
   color: var(--main-accent-color);
-  animation: colorchange 60s infinite alternate;
+  animation: colorchange 120s infinite alternate;
 }
 .color-shift-background {
   background-color: var(--main-accent-color);
-  animation: colorchangebackground 60s infinite alternate;
+  animation: colorchangebackground 120s infinite alternate;
 }
 
 @-webkit-keyframes colorchange {
@@ -253,5 +260,51 @@
 
   100% {
     background-color: var(--animation-color-one);
+  }
+}
+
+/* Gradient shift animation */
+
+#gradient-shift {
+  color: var(--main-accent-color);
+  background-image: -webkit-linear-gradient(
+    92deg,
+    rgb(228, 194, 211) 0%,
+    var(--main-accent-color) 60%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+  animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+#gradient-shift-background {
+  color: transparent;
+  background-image: -webkit-linear-gradient(
+    92deg,
+    rgb(228, 194, 211) 0%,
+    var(--main-accent-color) 60%
+  );
+  -webkit-background-clip: border;
+  background-clip: border;
+  -webkit-animation: hue 10s infinite linear;
+  animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
   }
 }

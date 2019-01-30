@@ -38,6 +38,17 @@ svg {
   fill: var(--main-font-color);
   margin: 0.5vw;
 }
+li > svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--main-bg-color);
+}
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .contact-bar > h3 {
   margin: 1vw 0;
   overflow: auto;

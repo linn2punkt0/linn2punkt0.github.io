@@ -8,17 +8,23 @@
   margin-bottom: 10vh;
 }
 .introduction > h2 {
-  color: var(--main-accent-color);
+  /* color: var(--main-accent-color); */
   font-family: var(--main-accent-font);
   font-size: 90px;
   font-weight: 400;
-  margin: 10px 0;
+  padding: 10px;
+  margin: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: var(--main-accent-color);
 }
 
 .introduction > h1 {
   color: var(--main-font-color);
   font-family: var(--main-font);
   font-size: 70px;
+  font-weight: 700;
   margin: 10px 0;
 }
 
@@ -50,9 +56,13 @@
   margin: 1vh 0;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: var(--main-accent-color);
 }
 .featured-one-image {
-  background-image: url("../images/meowmory2.jpg");
+  background-image: url("../images/meowmory.jpg");
   background-size: cover;
   background-position: center;
   grid-row: 2 / 3;
@@ -64,7 +74,7 @@
   grid-column: 1 / 2;
 }
 .featured-two-image {
-  background-image: url("../images/FS1.png");
+  background-image: url("../images/FS1.jpg");
   background-size: cover;
   background-position: center;
   grid-row: 2 / 3;
@@ -76,7 +86,7 @@
   grid-column: 2 / 3;
 }
 .featured-three-image {
-  background-image: url("../images/East-London.png");
+  background-image: url("../images/Photoify.jpg");
   background-size: cover;
   background-position: center;
   grid-row: 2 / 3;

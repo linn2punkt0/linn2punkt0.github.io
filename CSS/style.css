@@ -7,6 +7,12 @@
   --main-font: "Comfortaa";
   --main-detail-font: "Raleway Dots";
   --backup-font: "cursive";
+
+  --my-gradient-one: linear-gradient(
+    to right,
+    var(--main-accent-color) 0%,
+    #db9acd 100%;
+  );
 }
 body {
   top: 0;
@@ -96,7 +102,11 @@ footer {
   font-size: 22px;
 }
 .mail {
-  color: var(--main-accent-color);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: var(--main-accent-color);
 }
 .social-media {
   width: 30%;
