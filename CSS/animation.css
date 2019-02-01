@@ -155,11 +155,11 @@
 /* Color-shift animations */
 .color-shift {
   color: var(--main-accent-color);
-  animation: colorchange 120s infinite alternate;
+  animation: colorchange 60s infinite alternate;
 }
 .color-shift-background {
   background-color: var(--main-accent-color);
-  animation: colorchangebackground 120s infinite alternate;
+  animation: colorchangebackground 60s infinite alternate;
 }
 
 @-webkit-keyframes colorchange {

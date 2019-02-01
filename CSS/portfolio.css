@@ -37,6 +37,11 @@ h1 {
 .portfolio-items > div > h5 {
   margin: 1vw 0 0 0;
   font-size: 25px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: var(--main-accent-color);
 }
 .portfolio-items > a {
   margin: 1vh 0;
@@ -50,8 +55,13 @@ p {
   margin: 0;
 }
 .completion-date {
-  color: var(--main-accent-color);
+  /* color: var(--main-accent-color); */
   margin: 5px 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: var(--main-accent-color);
 }
 .item-one {
   grid-row: 1 / 2;
