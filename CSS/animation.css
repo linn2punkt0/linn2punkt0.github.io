@@ -154,11 +154,11 @@
 
 /* Color-shift animations */
 .color-shift {
-  color: var(--main-accent-color);
+  /* color: var(--main-accent-color); */
   animation: colorchange 60s infinite alternate;
 }
 .color-shift-background {
-  background-color: var(--main-accent-color);
+  /* background-color: var(--main-accent-color); */
   animation: colorchangebackground 60s infinite alternate;
 }
 

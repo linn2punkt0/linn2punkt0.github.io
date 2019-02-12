@@ -102,6 +102,9 @@ footer {
   font-size: 22px;
 }
 .mail {
+  color: var(--main-accent-color);
+}
+.animation-text {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
