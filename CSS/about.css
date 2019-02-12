@@ -25,16 +25,10 @@
 }
 h2 {
   font-family: var(--main-accent-font);
-  /* color: var(--main-accent-color); */
   font-size: 70px;
   font-weight: 400;
   margin: 0;
   padding: 10px 0;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: var(--main-accent-color);
 }
 p {
   font-family: var(--main-font);
