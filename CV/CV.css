@@ -129,6 +129,12 @@ p {
     padding: 0;
     margin-bottom: 20px;
   }
+  .contact-bar > svg {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 10px;
+  }
   .profile-cv {
     width: 150px;
     margin-top: 10px;

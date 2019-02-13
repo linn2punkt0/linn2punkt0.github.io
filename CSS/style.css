@@ -56,6 +56,8 @@ nav {
   pointer-events: none;
   transition: 0.5s;
   opacity: 0;
+}
+.menu-selector .links {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -65,7 +67,7 @@ nav {
   font-size: 30px;
   text-decoration: none;
 }
-.menu-selector > a {
+.menu-selector .links > a {
   text-decoration: none;
   color: var(--main-font-color);
 }
@@ -154,7 +156,9 @@ a > svg {
     margin-right: 0;
   }
   .menu-selector {
-    padding: 50px 0;
+  }
+  .menu-selector .links {
+    height: 600px;
   }
   .social-media {
     width: 70%;

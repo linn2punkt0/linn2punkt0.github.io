@@ -36,3 +36,14 @@
   text-decoration: none;
   color: var(--main-font-color);
 }
+.meowmory-image {
+  min-width: 100%;
+  padding-bottom: 70%;
+  background-image: url("../images/Meowmory-full-page.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.meowmory-image:hover .overlay {
+  opacity: 1;
+}
